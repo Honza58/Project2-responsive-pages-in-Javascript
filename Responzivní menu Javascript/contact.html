@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projek 2-responzivní menu_javasript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query-style.css" />
+    <script
+      src="https://kit.fontawesome.com/5c8acbbcb1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="contactpage">
+    <div class="container">
+      <header>
+        <di class="logo"><img src="img/logo.png" alt="" /></di>
+        <nav>
+          <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="aboutus.html">O nás</a></li>
+            <li><a href="actors.html">Herci</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+      </header>
+
+      <main>
+        <form class="welcomecontact">
+          <div class="label-account">Účet</div>
+          <div class="label-adress">Adresa</div>
+          <div action="" class="form1">
+            <ul>
+              <li>
+                <label for="jmeno" class="label">Jméno:</label
+                ><input
+                  type="text"
+                  id="jmeno"
+                  name="jmeno"
+                  class="input"
+                  required="required"
+                  placeholder="Jméno"
+                />
+              </li>
+
+              <li>
+                <label for="prijmeni" class="label">Příjmení:</label
+                ><input
+                  type="text"
+                  id="prijmeni"
+                  name="prijmeni"
+                  class="input"
+                  required="required"
+                  placeholder="Příjmení"
+                />
+              </li>
+
+              <li>
+                <label for="number" class="label">Tel. číslo:</label
+                ><input
+                  type="number"
+                  id="number"
+                  name="number"
+                  class="input"
+                  required="required"
+                  placeholder="Telefon"
+                />
+              </li>
+
+              <li>
+                <label for="email" class="label">Email:</label
+                ><input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="input"
+                  required="required"
+                  placeholder="Email"
+                />
+              </li>
+
+              <li>
+                <label for="password">Heslo:</label
+                ><input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="password1"
+                  required="required"
+                />
+              </li>
+
+              <li>
+                <label for="confirmpassword">Potvrzení hesla:</label
+                ><input
+                  type="password"
+                  id="confirmpassword"
+                  name="confirmpassword"
+                  class="password2"
+                  required="required"
+                />
+              </li>
+            </ul>
+            <p class="passwordtext"></p>
+          </div>
+
+          <div action="" class="form2">
+            <ul>
+              <li>
+                <label for="ulice" class="label">Ulice:</label
+                ><input
+                  type="text"
+                  id="ulice"
+                  name="ulice"
+                  class="input"
+                  required="required"
+                  placeholder="Ulice"
+                />
+              </li>
+              <li>
+                <label for="cislopopisne" class="label">Číslo popisné:</label
+                ><input
+                  type="number"
+                  id="cislopopisne"
+                  name="cislopopisne"
+                  class="input"
+                  required="required"
+                  placeholder="Číslo popisné"
+                />
+              </li>
+              <li>
+                <label for="mesto">Město:</label
+                ><input
+                  type="text"
+                  id="mesto"
+                  name="mesto"
+                  class="input"
+                  required="required"
+                  placeholder="Město"
+                />
+              </li>
+              <li>
+                <label for="psc">PSČ:</label
+                ><input
+                  type="number"
+                  id="psc"
+                  name="psc"
+                  class="input"
+                  required="required"
+                  placeholder="Směrovací číslo"
+                />
+              </li>
+              <div>
+                <li>
+                  <input type="submit" value="Vytvořit účet" class="submit" />
+                </li>
+              </div>
+            </ul>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

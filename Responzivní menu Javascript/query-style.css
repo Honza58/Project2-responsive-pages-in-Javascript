@@ -1,0 +1,69 @@
+@media (max-width: 599px) {
+  header {
+    position: relative;
+  }
+  header nav {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-color: #15304c;
+    display: none;
+  }
+
+  header nav li {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 23px;
+  }
+
+  .picture {
+    margin-top: 20px;  
+  }
+
+.newpicture {
+  width: 75%;
+  transition: 0.5s;
+}
+
+.p, .p1, .p2, .p3, .p4{
+  font-size: 75%;
+ }
+}
+
+@media (min-width: 600px) {
+  header nav {
+    display: block !important;
+  }
+  .newpicture {
+    width: 85%;
+  }
+  .p, .p1, .p2, .p3, .p4 {
+    font-size: 85%;
+   }
+
+}
+
+/* ---Formulář--- */
+@media (max-width: 680px) {
+  label {
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .form1,
+  .form2 {
+    text-align: center;
+  }
+
+
+}
+
+

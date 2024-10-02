@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bodyBackgroundHeaderColor: rgb(21, 48, 76);
+  --backGroungTitle: rgba(21, 48, 72, 0.5);
+  --labelAcountAdressColor: #ffffff;
+  --labelAcountAdressBackgroundcolor: #33343e;
+  --aHoover: #81bcfb;
+  --newWindow: rgba(0, 0, 0, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bodyBackgroundHeaderColor);
+  font-family: Poppins;
+}
+
+.container {
+  margin: 30px;
+}
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--bodyBackgroundHeaderColor);
+  height: 70px;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.logo img {
+  width: 200px;
+  margin-left: 20px;
+}
+
+nav {
+  margin-right: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-icon {
+  margin-right: 30px;
+  display: none;
+}
+
+.welcome {
+  min-height: calc(100vh - 70px);
+  background-image: url(img/background.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  font-size: 200%;
+  background-color: var(--backGroungTitle);
+  padding: 18px;
+  border-radius: 8px;
+}
+
+
+.title1 {
+  position: absolute;
+  top: 240px;
+  left: 50px;
+  font-size: 200%;
+  background-color: var(--backGroungTitle);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* ---sekce kontakt--- */
+main {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.label-account {
+  position: absolute;
+  top: 1.5px;
+  left: 17%;
+  color: var(--labelAcountAdressColor);
+  padding: 3px 12px;
+  background-color: var(--labelAcountAdressBackgroundcolor);
+  border-radius: 3px;
+}
+
+.label-adress {
+  position: absolute;
+  top: 1.5px;
+  left: 52%;
+  color: var(--labelAcountAdressColor);
+  padding: 3px 12px;
+  background-color: var(--labelAcountAdressBackgroundcolor);
+  border-radius: 3px;
+}
+
+.welcomecontact {
+  display: flex;
+  justify-content: space-evenly;
+  border: solid #365a80;
+  border-width: 36px 9px;
+  border-radius: 3px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form1,
+.form2 {
+  text-align: center;
+  padding: 0px;
+  margin: 5px 5px 40px 5px;
+}
+
+.welcomecontact li {
+  color: var(--labelAcountAdressColor);
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 90%;
+  padding: 0px;
+}
+
+.welcomecontact input {
+  width: 52%;
+  max-width: 200px;
+  min-width: 100px;
+  height: 28px;
+  border: none;
+}
+
+.password1,
+.password2 {
+  width: 52%;
+  max-width: 200px;
+  min-width: 100px;
+  height: 28px;
+  border: none;
+}
+
+.passwordtext {
+  padding: 10px 25px 0px 0px;
+  text-align: right;
+}
+
+li .submit {
+  width: 100px;
+  position: absolute;
+  padding: 3px 8px;
+  bottom: 4px;
+  left: 45.118%;
+  cursor: pointer;
+}
+
+.right {
+  color: rgb(84, 180, 46);
+}
+
+.bad {
+  color: red;
+}
+
+/* ---sekce hover--- */
+
+ul li a:hover {
+  color: var(--aHoover);
+}
+
+form .submit:hover {
+  color: var(--labelAcountAdressColor);
+  background-color: var(--aHoover);
+}
+
+/* ---sekce actors--- */
+.mainactors {
+  z-index: 1;
+}
+
+.newWindow {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color:var(--newWindow);
+}
+
+.underNewWindow {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.p, .p1, .p2, .p3 {
+  margin: 0 auto;
+  background-color: rgba(21, 48, 76, 0.5);
+  padding: 5px;
+  margin: 0 auto;
+  width: 80px;
+  height: 20px;
+  height: unset;
+  border-radius: 5px;
+}
+
+.p, .p1, .p2 {
+  margin-bottom: 5px;
+}
+
+
+.newpicture {
+  display: block;
+  max-width: 200px;
+  z-index: 1;
+  margin: 70px auto 20px;
+}
+
+.buttoncross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.buttoncross img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.welcomeactors {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.picture {
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.picture img:hover {
+  width: 210px;
+  height: 210px;
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--labelAcountAdressColor);
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+

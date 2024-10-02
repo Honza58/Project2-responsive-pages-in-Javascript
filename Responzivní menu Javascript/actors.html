@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projek 2-responzivní menu_javasript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query-style.css" />
+    <script
+      src="https://kit.fontawesome.com/5c8acbbcb1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="actorspage">
+    <div class="container">
+      <header>
+        <div class="logo"><img src="img/logo.png" alt="" /></div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="aboutus.html">O nás</a></li>
+            <li><a href="actors.html">Herci</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+      </header>
+
+      <main class="mainactors">
+        <section class="welcomeactors">
+          <div class="picture">
+            <p>Harry Potter</p>
+            <img src="img/harry-potter.jpg" alt="" class="image originalPhoto"
+            data-info='<p class="p">Jméno herce:</p> 
+                       <p class="p1">Daniel Radcliffe</p>
+                       <p class="p2">Narozen:</p>
+                       <p class="p3">23.7.1989</p>'>
+          </div>
+
+          <div class="picture">
+            <p>Hermiona Grangerová</p>
+            <img
+              src="img/hermiona-grangerova-foto.jpg"
+              alt="Hermiona Grangerová"
+              class="originalPhoto" 
+              data-info='<p class="p">Jméno herce:</p> 
+                         <p class="p1">Emma Watson</p>
+                         <p class="p2">Narozena:</p>
+                         <p class="p3">15.4.1990</p>'>
+          </div>
+
+          <div class="picture">
+            <p>Ron Weasley</p>
+            <img src="img/ron-weasley-foto.jpg" alt="" class="originalPhoto" 
+            data-info='<p class="p">Jméno herce:</p> 
+                       <p class="p1">Rupert Grint</p>
+                       <p class="p2">Narozen:</p>
+                       <p class="p3"> 24.8.1988</p>'>
+          </div>
+
+          <div class="picture">
+            <p>Albus Brumbál</p>
+            <img src="img/albus-brumbal-foto.jpg" alt=""  class="originalPhoto" 
+            data-info='<p class="p">Jméno herce:</p> 
+                       <p class="p1">Michael Gambon</p>
+                       <p class="p2">Narozen:</p>
+                       <p class="p3">19.10.1940</p>'>
+          </div>
+
+          <div class="picture">
+            <p>Dobby</p>
+            <img src="img/dobby-foto.jpg" alt="" class="originalPhoto"  
+            data-info='<p class="p">Jméno herce:</p> 
+                       <p class="p1">Toby Jones</p>
+                       <p class="p2">Narozen:</p>
+                       <p class="p3">7.9.1966</p>'>
+          </div>
+
+        <div class="newWindow newWindow1">
+          <div class="underNewWindow">
+            <img class="newpicture newpicture1" /> 
+            <div class="buttoncross buttoncross1">
+              <img src="img/cross-30px.png" alt="" />
+            </div>
+            <div class="description">
+            </div>
+          </div>
+        </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
